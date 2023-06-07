@@ -26,6 +26,9 @@ if b == 'y':
 /update 更新程序''')
 
         if c == '/update':
+            os.system('pip install requests')
+            os.system('pip3 install requests')
+            
             # 当前软件版本
             current_version = "1.2.1"
     
