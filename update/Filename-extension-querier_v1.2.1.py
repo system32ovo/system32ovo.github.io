@@ -30,7 +30,7 @@ if b == 'y':
             current_version = "1.2.0"
     
             # 最新版本的 JSON 文件地址
-            update_url = "http://system32ovo.github.io/update.json"
+            update_url = "http://system32ovo.github.io/update/update.json"
 
             # 在 requests.get() 中传递 verify=False 参数不进行 SSL 证书验证
             def download_and_install(url):
