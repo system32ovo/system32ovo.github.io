@@ -27,7 +27,7 @@ if b == 'y':
 
         if c == '/update':
             # 当前软件版本
-            current_version = "1.2.0"
+            current_version = "1.2.1"
     
             # 最新版本的 JSON 文件地址
             update_url = "http://system32ovo.github.io/update/update.json"
