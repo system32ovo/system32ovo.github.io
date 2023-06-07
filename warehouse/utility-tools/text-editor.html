@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Text Editor</title>
+</head>
+<body>
+        <h1>欢迎使用文本编辑器！</h1>
+        <p>这是一个文本编辑器，可以让你轻松编辑并保存各种类型的文本文件。Tips:太老的浏览器可能会无法下载，但是一般都可以</p>
+        <p>作者b站主页：<a href="https://space.bilibili.com/2120094752" target="_blank">https://space.bilibili.com/2120094752</a></p>
+	<form action="#" method="post" onsubmit="saveTextToFile()">
+		<textarea id="textArea" name="text" style="height: 300px; width: 100%;"></textarea>
+		<br>
+		<label for="filename">文件名:</label>
+		<input type="text" id="filename" name="filename">
+		<select id="filetype" name="filetype">
+			<option value=".txt" selected>txt</option>
+			<option value=".md">md</option>
+			<option value=".js">js</option>
+			<option value=".html">html</option>
+			<option value=".css">css</option>
+			<option value=".py">py</option>
+			<option value=".cpp">cpp</option>
+			<option value=".c">c</option>
+			<option value=".php">php</option>
+			<option value=".pyw">pyw</option>
+			<option value=".json">json</option>
+			<option value=".xml">xml</option>
+		</select>
+		<button type="submit">保存文件并下载</button>
+		<input type="file" id="fileInput" style="display:none;" onchange="loadFile()" />
+		<button type="button" onclick="document.getElementById('fileInput').click()">导入本地文件</button>
+	</form>
+	<script>
+	function saveTextToFile() {
+	    // 获取文本区域的内容
+	    var text = document.getElementById("textArea").value;
+	    
+	    // 获取用户输入的文件名和扩展名
+	    var filename = document.getElementById("filename").value;
+	    var filetype = document.getElementById("filetype").value;
+	  
+	    // 如果没有输入文件名，则使用默认名称
+	    if (filename === "") {
+	    	filename = "myTextFile";
+	    }
+	    
+	    // 创建一个Blob对象，并将文本转换为UTF-8编码
+	    var data = new Blob([text], {type: 'text/plain;charset=utf-8'});
+	    
+	    // 创建一个<a>标签来下载文件
+	    var a = document.createElement('a');
+	    a.download = filename + filetype;
+	    a.href = URL.createObjectURL(data);
+	    a.style.display = 'none';
+	    document.body.appendChild(a);
+	    
+	    // 模拟点击事件来下载文件
+	    a.click();
+	    
+	    // 清理<a>标签和Blob对象
+	    document.body.removeChild(a);
+	    URL.revokeObjectURL(a.href);
+	}
+	
+	function loadFile() {
+		var input = document.getElementById("fileInput");
+		if (input.files && input.files[0]) {
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				document.getElementById("textArea").value = e.target.result;
+			};
+			reader.readAsText(input.files[0]);
+		}
+	}
+	</script>
+</body>
+</html>

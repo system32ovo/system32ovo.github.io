@@ -1,0 +1,40 @@
+cmd.exe
+命令指示符
+regedit.exe
+注册表编辑器
+Taskmgr.exe
+任务管理器
+taskkill /im 任务名称
+用任务名称结束进程
+taskkill /im 任务名称 /f
+用任务名称结束进程(强制结束)
+tasklist
+系统中的进程列表
+taskkill /pid 任务名称
+用任务的pid结束进程
+taskkill /pid 任务名称 /f
+用任务的pid结束进程(强制结束)
+taskkill /im 任务名称 /f /t
+用任务名称结束进程(强制结束)(结束由这个任务启动的其他子进程
+taskkill /pid 任务名称 /f /t
+用任务的pid结束进程(强制结束)(结束由这个任务启动的其他子进程
+gpedit.msc
+组策略
+mmc.exe
+控制台
+mspaint.exe
+画图
+devmgmt.msc
+设备管理器
+del *.扩展名 /f
+删除所有（   ）扩展名的文件
+del 文件名.扩展名 /f
+删除指定文件
+cd 路径
+切换到指定路径
+shutdown -r -t xx（xx是秒）
+xx秒后重启
+shutdown -s -t xx（xx是秒）
+xx秒后关机
+shutdown -a
+取消关机，重启，注销等指令
