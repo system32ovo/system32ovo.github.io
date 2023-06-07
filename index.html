@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>system32ovo的网站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <style>
+    /* 添加 CSS 样式 */
+    body {
+      margin: 0;
+      padding: 0;
+      color: black;
+    }
+
+    .co {
+      color: #3385ff;
+    }
+
+    .ttt {
+      color: black;
+    }
+
+    a {
+      text-decoration: none; /* 去掉链接下划线 */
+      color: #f8f8f8;
+    }
+    
+    .my-link {
+      font-weight: bold;
+    }
+
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 200px;
+      background-image: url("123.jpg");
+      background-size: cover;
+      background-position: center center;
+      color: black; /* 设置文本颜色 */
+      padding: 20px; /* 调整内边距大小，使文本与背景之间有一定间隔 */
+      font-size: 16px; /* 设置字体大小 */
+      border: none; /*去掉边框*/
+      text-align: justify; /*调整文字对齐方式*/
+      line-height: 1.5em; /*调整行高*/
+    }
+
+    .sidebar-content {
+      margin-top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .sidebar p {
+      margin: 0; /*去掉段落的默认外边距*/
+    }
+
+    .top-container {
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .bottom-container {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 20px;
+      background-color: #f8f8f8;
+    }
+
+    button {
+      display: block;
+      margin: 20px;
+      padding: 10px;
+      background-color: #3385ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .sidebar img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .anim {
+      position: relative;
+      animation: flyin 0.5s;
+    }
+
+    @keyframes flyin {
+      from {
+        left: -500px;
+        opacity: 0;
+      }
+      to {
+        left: 0;
+        opacity: 1;
+      }
+    }
+
+    /* 添加悬停时的样式 */
+    .my-link:hover,
+    .my-link:hover ~ * {
+      opacity: 0.5; /* 设置透明度为 0.5 */
+      transition: opacity 0.5s ease-in-out; /* 添加过渡效果 */
+    }
+  </style>
+</head>
+<body>
+  <!-- 添加侧边栏 HTML 代码 -->
+  <div class="sidebar">
+    <div class="top-container anim">
+      <!-- 侧边栏头部内容 -->
+      <h2>system32ovo的网站</h2>
+      <p>欢迎来到我的网站! bilibili: system32ovo，求关注</p>
+    </div>
+    <div class="sidebar-content">
+      <!-- 在链接上添加类名 "my-link" -->
+      <a href="http://system32ovo123.best6.top/warehouse" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小仓库</a>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <a href="https://space.bilibili.com/2120094752/dynamic" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b站动态</a>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <a href="http://system32ovo123.best6.top/project" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的项目</a>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <a href="http://system32ovo123.best6.top/about" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于作者</a>
+    </div>
+    <div class="bottom-container">
+      <!-- 侧边栏底部内容 -->
+      <p style="font-size: 10px;">by bilibili: system32ovo</p>
+    </div>
+  </div>
+
+  <!-- 在此添加其他网页内容 -->
+  <div style="margin-left: 300px;">
+    <a href="http://system32ovo123.best6.top/about" class="ttt">
+      <h2>关于system32ovo的网站</h2>
+      <p>(这是一个链接)</p>
+    </a>
+    <hr />
+    <a href="http://system32ovo123.best6.top/thanks-list.html" class="ttt">
+      <h2>感谢名单</h2>
+      <p class="co">名单编辑于 2023-5-19</p>
+      <p>点击此处跳转名单</p>
+    </a>
+</body>
+</html>
