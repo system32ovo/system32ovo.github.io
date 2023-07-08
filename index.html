@@ -18,7 +18,7 @@
         height: 1000px;
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 10px;
-        padding: 20px;
+        padding: 20px; /* 设置容器内边距为 20 像素 */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         margin-top: 20px;
         margin-bottom: 20px;
@@ -56,10 +56,15 @@
       border: none; /*去掉边框*/
       text-align: justify; /*调整文字对齐方式*/
       line-height: 1.5em; /*调整行高*/
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
     .sidebar-content {
-      margin-top: 50%;
+      margin-top: 25%;
+      transform: translateY(-50%);
+    }
+
+    .sidebar-content1 {
       transform: translateY(-50%);
     }
 
@@ -69,7 +74,7 @@
 
     .top-container {
       padding: 20px;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.821);
       border-radius: 10px;
     }
 
@@ -77,9 +82,10 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 100%;
+      width: 200px;
       padding: 20px;
-      background-color: #f8f8f8;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
     button {
@@ -133,12 +139,18 @@
     </div>
     <div class="sidebar-content">
       <!-- 在链接上添加类名 "my-link" -->
-      <a href="https://system32ovo.github.io/warehouse" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小仓库</a>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <a href="https://system32ovo.github.io/warehouse" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小仓库(暂时无法使用)</a>
+    </div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <div class="sidebar-content1">
       <a href="https://space.bilibili.com/2120094752/dynamic" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b站动态</a>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <div class="sidebar-content1">
       <a href="https://system32ovo.github.io/project" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的项目</a>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <div class="sidebar-content1">
       <a href="https://system32ovo.github.io/about" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于作者</a>
     </div>
     <div class="bottom-container">
@@ -148,11 +160,11 @@
   </div>
 
   <!-- 在此添加其他网页内容 -->
-  <div style="margin-left: 300px;">
+  <div style="margin-left: 290px;">
     <div class="glass">
       <a href="https://system32ovo.github.io/about" class="ttt">
         <h2>关于system32ovo的网站</h2>
-        <p>(这是一个链接)</p>
+        <p class="co">点击进入</p>
       </a>
       <hr />
       <a href="https://system32ovo.github.io/thanks-list.html" class="ttt">
