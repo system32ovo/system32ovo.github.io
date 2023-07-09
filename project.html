@@ -11,6 +11,22 @@
       margin: 0;
       padding: 0;
       color: black;
+      background-image: url("1231.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .glass {
+        width: 1000px;
+        height: 700px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        padding: 20px; /* 设置容器内边距为 20 像素 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 
     .i {
@@ -54,10 +70,15 @@
       border: none; /*去掉边框*/
       text-align: justify; /*调整文字对齐方式*/
       line-height: 1.5em; /*调整行高*/
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
     .sidebar-content {
-      margin-top: 50%;
+      margin-top: 25%;
+      transform: translateY(-50%);
+    }
+
+    .sidebar-content1 {
       transform: translateY(-50%);
     }
 
@@ -67,16 +88,18 @@
 
     .top-container {
       padding: 20px;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.821);
+      border-radius: 10px;
     }
 
     .bottom-container {
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 100%;
+      width: 200px;
       padding: 20px;
-      background-color: #f8f8f8;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
     button {
@@ -128,14 +151,25 @@
       <h2>system32ovo的网站</h2>
       <p>欢迎来到我的网站! bilibili: system32ovo，求关注</p>
     </div>
+    
     <div class="sidebar-content">
+      <a href="https://system32ovo.github.io/about" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主页</a>
+    </div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <div class="sidebar-content1">
       <!-- 在链接上添加类名 "my-link" -->
-      <a href="https://system32ovo.github.io/warehouse" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小仓库</a>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <a href="https://system32ovo.github.io/warehouse" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小仓库(暂时无法使用)</a>
+    </div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <div class="sidebar-content1">
       <a href="https://space.bilibili.com/2120094752/dynamic" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b站动态</a>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <div class="sidebar-content1">
       <a href="https://system32ovo.github.io/project" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的项目</a>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <div class="sidebar-content1">
       <a href="https://system32ovo.github.io/about" class="my-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于作者</a>
     </div>
     <div class="bottom-container">
@@ -145,16 +179,17 @@
   </div>
 
   <!-- 在此添加其他网页内容 -->
-  <div style="margin-left: 300px;">
-    <h1>1.Filename-extension-querier</h1>
-    <p>&nbsp;</p>
-    <a href="https://github.com/system32ovo/Filename-extension-querier/">
-      <img src="12.png" alt="github链接" class="i">
-    </a>
-    <p class="ttt">Filename-extension-querier(文件扩展名查询器)</p>
-    <p class="ttt">自己用python做的一个项目，截止1.2.3版本已收录了140种（数了一下应该是140）</p>
-    <a href="https://github.com/system32ovo/Filename-extension-querier/" class="tt">感兴趣可以去看看哦(单击此处可跳转)</a>
-    <hr />
+  <div style="margin-left: 290px;">
+    <div class="glass">
+      <h1>1.Filename-extension-querier</h1>
+      <p>&nbsp;</p>
+      <a href="https://github.com/system32ovo/Filename-extension-querier/">
+        <img src="12.png" alt="github链接" class="i">
+      </a>
+      <p class="ttt">Filename-extension-querier(文件扩展名查询器)</p>
+      <p class="ttt">自己用python做的一个项目，截止1.2.3版本已收录了140种（数了一下应该是140）</p>
+      <a href="https://github.com/system32ovo/Filename-extension-querier/" class="tt">感兴趣可以去看看哦(单击此处可跳转)</a>
+    </div>
   </div>
 </body>
 </html>
